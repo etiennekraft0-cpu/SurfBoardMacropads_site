@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SurfBoard — Cinematic Macro Pads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SurfBoard is a family of touchscreen macro pads inspired by the North Shore — built for creators, makers, and engineers." />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts: Nunito + Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body class="page-home">
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="logo-lockup">
+        <div class="logo-mark">SB</div>
+        <div class="logo-text">SurfBoard</div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link nav-link-active">Overview</a>
+        <a href="lite.html" class="nav-link">Lite</a>
+        <a href="pro.html" class="nav-link">Pro</a>
+        <a href="maker.html" class="nav-link">Maker Edition</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero section" data-animate="hero">
+        <div class="hero-bg">
+          <div class="hero-gradient"></div>
+          <div class="wave wave-1"></div>
+          <div class="wave wave-2"></div>
+          <div class="wave wave-3"></div>
+        </div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Touchscreen Macro Pads</p>
+            <h1 class="hero-title">
+              SurfBoard turns your workflow<br />
+              into a smooth, cinematic surface.
+            </h1>
+            <p class="hero-subtitle">
+              A family of ocean‑inspired macro pads powered by Raspberry Pi — built for creators, makers, and engineers who want their tools to feel as fluid as a perfect wave.
+            </p>
+            <div class="hero-cta-row">
+              <a href="pro.html" class="btn btn-primary">Explore SurfBoard Pro</a>
+              <a href="lite.html" class="btn btn-ghost">Start with Lite</a>
+            </div>
+            <p class="hero-footnote">
+              Cinematic motion. Square capacitive displays. North Shore‑inspired design.
+            </p>
+          </div>
+
+          <div class="hero-device" data-tilt>
+            <div class="device-shell">
+              <div class="device-screen">
+                <div class="screen-gradient"></div>
+                <div class="screen-widget-row">
+                  <div class="screen-widget pill pill-blue">Macros</div>
+                  <div class="screen-widget pill pill-teal">Scenes</div>
+                  <div class="screen-widget pill pill-gold">Dashboards</div>
+                </div>
+                <div class="screen-main">
+                  <div class="screen-card screen-card-large">
+                    <div class="screen-card-label">SurfBoard Pro</div>
+                    <div class="screen-card-value">4.4" 720×720</div>
+                    <div class="screen-card-meta">Raspberry Pi Zero 2 W</div>
+                  </div>
+                  <div class="screen-card-column">
+                    <div class="screen-card">
+                      <div class="screen-card-label">Lite</div>
+                      <div class="screen-card-value">3.5" 480×480</div>
+                    </div>
+                    <div class="screen-card">
+                      <div class="screen-card-label">Maker</div>
+                      <div class="screen-card-value">Pi 4B • GPIO</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="device-shadow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lineup -->
+      <section class="section section-lineup" data-animate="section">
+        <div class="section-header">
+          <h2>One ecosystem, three ways to ride.</h2>
+          <p>
+            From first‑time makers to over‑building engineers, SurfBoard scales with your ambition. Same visual language, different levels of power and expandability.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <a href="lite.html" class="product-card" data-tilt>
+            <div class="product-tag">Entry</div>
+            <h3>SurfBoard Lite</h3>
+            <p class="product-blurb">
+              Compact, approachable, and perfect for getting started with touchscreen macros, media controls, and simple dashboards.
+            </p>
+            <ul class="product-spec-list">
+              <li>3.5" 480×480 IPS capacitive display</li>
+              <li>Raspberry Pi Zero 2 W</li>
+              <li>Single‑board design</li>
+              <li>Optional GPIO access</li>
+            </ul>
+            <span class="product-link">View Lite →</span>
+          </a>
+
+          <a href="pro.html" class="product-card product-card-featured" data-tilt>
+            <div class="product-tag">Flagship</div>
+            <h3>SurfBoard Pro</h3>
+            <p class="product-blurb">
+              High‑resolution macro surface with built‑in USB hub and expansion — the cinematic centerpiece of your desk.
+            </p>
+            <ul class="product-spec-list">
+              <li>4.4" 720×720 DPI capacitive display</li>
+              <li>Raspberry Pi Zero 2 W</li>
+              <li>Integrated USB hub (USB‑C + USB‑A)</li>
+              <li>Rear GPIO daughterboard</li>
+            </ul>
+            <span class="product-link">View Pro →</span>
+          </a>
+
+          <a href="maker.html" class="product-card" data-tilt>
+            <div class="product-tag">Overbuilt</div>
+            <h3>Maker Edition</h3>
+            <p class="product-blurb">
+              Full‑fat Raspberry Pi 4B, metal enclosure, and serious expansion for people who can’t stop modding.
+            </p>
+            <ul class="product-spec-list">
+              <li>4.4" 720×720 DPI display</li>
+              <li>Raspberry Pi 4B</li>
+              <li>Full GPIO access + extra headers</li>
+              <li>Metal enclosure, 4‑layer PCB</li>
+            </ul>
+            <span class="product-link">View Maker Edition →</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Philosophy -->
+      <section class="section section-philosophy" data-animate="section">
+        <div class="section-header">
+          <h2>Why a macro pad should feel like a wave.</h2>
+          <p>
+            Traditional macro pads are grids of buttons. SurfBoard is a living surface — a touchscreen that can become whatever your workflow needs: control room, stream deck, synth panel, or status board.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <h3>Fluid by design</h3>
+            <p>
+              The square capacitive display lets layouts shift, morph, and adapt. Scenes, pages, and modes can flow instead of being locked to fixed keys.
+            </p>
+          </div>
+          <div class="philosophy-card">
+            <h3>Built on Raspberry Pi</h3>
+            <p>
+              Each SurfBoard runs on a Raspberry Pi, giving you a familiar, hackable platform with a massive ecosystem of tools and libraries.
+            </p>
+          </div>
+          <div class="philosophy-card">
+            <h3>For people who build</h3>
+            <p>
+              From Lite to Maker Edition, every model is designed for people who tinker, script, automate, and ship things into the world.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="logo-mark footer-logo">SB</div>
+          <span class="footer-brand">SurfBoard</span>
+        </div>
+        <div class="footer-right">
+          <span class="footer-note">All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

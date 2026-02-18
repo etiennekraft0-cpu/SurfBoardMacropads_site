@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SurfBoard Maker Edition — Overbuilt for Builders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SurfBoard Maker Edition is a fully expandable macro surface built around Raspberry Pi 4B for serious makers and engineers." />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body class="page-detail page-maker">
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="logo-lockup">
+        <div class="logo-mark">SB</div>
+        <div class="logo-text">SurfBoard</div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="lite.html" class="nav-link">Lite</a>
+        <a href="pro.html" class="nav-link">Pro</a>
+        <a href="maker.html" class="nav-link nav-link-active">Maker Edition</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-detail section" data-animate="hero">
+        <div class="hero-bg">
+          <div class="hero-gradient hero-gradient-maker"></div>
+          <div class="wave wave-2"></div>
+          <div class="wave wave-3"></div>
+        </div>
+
+        <div class="hero-inner hero-inner-detail">
+          <div class="hero-copy">
+            <p class="eyebrow">SurfBoard Maker Edition</p>
+            <h1 class="hero-title">
+              Overbuilt on purpose.<br />For people who can’t stop building.
+            </h1>
+            <p class="hero-subtitle">
+              A fully expandable macro surface with Raspberry Pi 4B, metal enclosure, and serious I/O — built for engineers, modders, and hardware‑obsessed makers.
+            </p>
+            <ul class="hero-spec-list">
+              <li>4.4" 720×720 DPI capacitive display</li>
+              <li>Raspberry Pi 4B</li>
+              <li>Full GPIO access + extra headers</li>
+              <li>Metal enclosure, 4‑layer main PCB</li>
+            </ul>
+            <div class="hero-cta-row">
+              <a href="pro.html" class="btn btn-ghost">Compare with Pro</a>
+              <a href="index.html" class="btn btn-text">Back to overview</a>
+            </div>
+          </div>
+
+          <div class="hero-device hero-device-detail" data-tilt>
+            <div class="device-shell device-shell-maker">
+              <div class="device-screen">
+                <div class="screen-gradient screen-gradient-maker"></div>
+                <div class="screen-main screen-main-detail">
+                  <div class="screen-card screen-card-large">
+                    <div class="screen-card-label">Maker Layout</div>
+                    <div class="screen-card-value">Deep system dashboards</div>
+                    <div class="screen-card-meta">Sensors • Buses • Custom UIs</div>
+                  </div>
+                  <div class="screen-card">
+                    <div class="screen-card-label">I/O</div>
+                    <div class="screen-card-value">GPIO • I²C • SPI • UART • ADC</div>
+                    <div class="screen-card-meta">Fan PWM • Expansion headers</div>
+                  </div>
+                </div>
+              </div>
+              <div class="device-shadow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-detail" data-animate="section">
+        <div class="section-header">
+          <h2>For when “just enough” isn’t enough.</h2>
+          <p>
+            Maker Edition is what happens when you stop compromising and start designing for the people who always add one more feature, one more sensor, one more idea.
+          </p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <h3>Full Raspberry Pi 4B</h3>
+            <p>
+              With a Pi 4B at its core, Maker Edition can run heavier stacks, richer UIs, and more complex integrations without breaking a sweat.
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>Serious expansion</h3>
+            <p>
+              Extra headers for I²C, SPI, UART, ADC, and fan control give you room to build full systems around the board, not just on top of it.
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>Built to be opened</h3>
+            <p>
+              The metal enclosure and 4‑layer PCB are designed with modders in mind — this is hardware you’re meant to explore, not hide.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="logo-mark footer-logo">SB</div>
+          <span class="footer-brand">SurfBoard</span>
+        </div>
+        <div class="footer-right">
+          <span class="footer-note">All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SurfBoard Lite — Compact Touchscreen Macro Pad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SurfBoard Lite is a compact, approachable touchscreen macro pad powered by Raspberry Pi Zero 2 W." />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body class="page-detail page-lite">
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="logo-lockup">
+        <div class="logo-mark">SB</div>
+        <div class="logo-text">SurfBoard</div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Overview</a>
+        <a href="lite.html" class="nav-link nav-link-active">Lite</a>
+        <a href="pro.html" class="nav-link">Pro</a>
+        <a href="maker.html" class="nav-link">Maker Edition</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-detail section" data-animate="hero">
+        <div class="hero-bg">
+          <div class="hero-gradient hero-gradient-lite"></div>
+          <div class="wave wave-1"></div>
+          <div class="wave wave-2"></div>
+        </div>
+
+        <div class="hero-inner hero-inner-detail">
+          <div class="hero-copy">
+            <p class="eyebrow">SurfBoard Lite</p>
+            <h1 class="hero-title">
+              The approachable<br />touchscreen macro pad.
+            </h1>
+            <p class="hero-subtitle">
+              A compact, affordable entry into the SurfBoard ecosystem — perfect for creators, students, and hobbyists who want a clean, modern macro surface without overbuilding.
+            </p>
+            <ul class="hero-spec-list">
+              <li>3.5" 480×480 IPS capacitive display</li>
+              <li>Raspberry Pi Zero 2 W</li>
+              <li>Single‑board design</li>
+              <li>Optional GPIO access</li>
+            </ul>
+            <div class="hero-cta-row">
+              <a href="pro.html" class="btn btn-ghost">Step up to Pro</a>
+              <a href="index.html" class="btn btn-text">Back to overview</a>
+            </div>
+          </div>
+
+          <div class="hero-device hero-device-detail" data-tilt>
+            <div class="device-shell device-shell-lite">
+              <div class="device-screen">
+                <div class="screen-gradient screen-gradient-lite"></div>
+                <div class="screen-main screen-main-detail">
+                  <div class="screen-card">
+                    <div class="screen-card-label">Lite Layout</div>
+                    <div class="screen-card-value">9–12 soft keys</div>
+                    <div class="screen-card-meta">Scenes • Media • Shortcuts</div>
+                  </div>
+                  <div class="screen-card">
+                    <div class="screen-card-label">Ideal for</div>
+                    <div class="screen-card-value">First‑time macro users</div>
+                    <div class="screen-card-meta">Students • Streamers • Makers</div>
+                  </div>
+                </div>
+              </div>
+              <div class="device-shadow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-detail" data-animate="section">
+        <div class="section-header">
+          <h2>Small footprint, big impact.</h2>
+          <p>
+            SurfBoard Lite focuses on the essentials: a responsive square display, a capable Raspberry Pi, and a layout that feels instantly understandable. It’s the macro pad you actually want to keep on your desk.
+          </p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <h3>Perfect starter board</h3>
+            <p>
+              Lite is ideal if you’re new to macro pads or just want a clean, focused surface for a few key workflows — streaming controls, media, shortcuts, or a tiny status dashboard.
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>Powered by Pi Zero 2 W</h3>
+            <p>
+              The Raspberry Pi Zero 2 W gives Lite enough power to run modern UIs, dashboards, and automation scripts without overcomplicating the hardware.
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>Designed to grow with you</h3>
+            <p>
+              Optional GPIO access means you can start simple and later experiment with sensors, LEDs, or external controls as your curiosity grows.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="logo-mark footer-logo">SB</div>
+          <span class="footer-brand">SurfBoard</span>
+        </div>
+        <div class="footer-right">
+          <span class="footer-note">All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
